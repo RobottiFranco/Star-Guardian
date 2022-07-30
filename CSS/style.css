@@ -1,0 +1,107 @@
+/* reset style */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* general information */
+
+body{
+    background-image: url(https://images3.alphacoders.com/739/739041.png);
+    /* background-image: url(https://images.contentstack.io/v3/assets/blt187521ff0727be24/bltd462c75e2a0cdc33/60ee12805fbfcb5e84822a45/star-guardians-starfall-entourage.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    font-family: 'Square Peg', cursive;
+    color: pink;
+}
+
+img{
+    /* hace que la imagen no se deforme */
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.h1{
+    font-size: 4em;
+}
+
+/* title */
+
+.title h1{
+    text-align: center;
+    padding: 10px 0;
+
+    font-size: 7rem;
+}
+
+.title h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* body */
+
+.container{
+
+    width: 90%; /* space the container use in the page */
+    max-width: 1000px;
+    margin: 1.6em auto; /* margin up down and sides (auto) */
+
+    display: grid;
+    gap: 1.6em; /* space between containers */
+
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.main, .aside, .article{
+    padding: 20px;
+}
+
+.main p{
+    font-size: 2.3em;
+    margin-bottom: 0.5em;
+}
+
+.aside p{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.aside img{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.main{
+    grid-column: span 3;
+}
+
+.aside{
+    grid-column: span 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article{
+    margin-top: 10px;
+}
+
+/* effects */
+
+.article:hover, .aside p:hover, .title:hover{
+    color: rgb(255, 255, 255);
+}
+
+.article, .aside p, .title{
+    transition: 0.6s;
+}
